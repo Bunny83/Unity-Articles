@@ -82,6 +82,7 @@ The combination of those it quite more complicated. For more information [see ro
 
 <br>
 
+[](#projection-matrix)
 <h2>Projection matrix</h2>
 
 The projection matrix plays a special role. It's responsible for projecting 3d coordinates from view / camera space into "normalized device coordinates". However perspective projection requires an operation that isn't possible with pure matrix operations. Specifically in a perspective projection the x and y coordinates have to be scaled based on the z value of the vertex. However a matrix can only create linear combinations (additions) of the different incoming components. Therefore our graphics hardware uses a special convention. It uses homogeneous coordinates where the 4th vector component acts as "normalization value". After the transformation the hardware performs the "homogeneous divide". That is dividing the whole vector by the 4th component (the "w" value)
