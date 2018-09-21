@@ -138,7 +138,7 @@ If you have trouble calculating your projection matrix based on an angle, [have 
   [1]: https://en.wikipedia.org/wiki/Matrix_(mathematics)#Linear_transformations
   [2]: https://en.wikipedia.org/wiki/Row-_and_column-major_order
   [3]: https://en.wikipedia.org/wiki/Rotation_matrix
-  [4]: /storage/temp/95055-projection-near-clipping-plane.png
+  [4]: https://user-images.githubusercontent.com/5081110/45870012-33faa180-bd8a-11e8-9998-ee549d4ec817.png
   [5]: http://www.songho.ca/opengl/gl_projectionmatrix.html
   [6]: https://docs.unity3d.com/ScriptReference/Camera-worldToCameraMatrix.html
   [7]: https://stackoverflow.com/questions/18404890/how-to-build-perspective-projection-matrix-no-api
