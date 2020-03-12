@@ -19,7 +19,7 @@ OnGUI is, in my opinion, a bad name. Of course it's main purpose is to "do GUI s
 # The Event class
 
 
-The static [Event.current][14] holds the current [EventType][16] that describes why the `OnGUI/OnInspectorGUI` callbacks are being called. 
+The static [Event.current][14] holds the current [EventType][16] that describes why `OnGUI/OnInspectorGUI` callbacks are being called. 
 
 Here's a quick overview of the different event types:
 
