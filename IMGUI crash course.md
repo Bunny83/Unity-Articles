@@ -19,7 +19,7 @@ OnGUI is, in my opinion, a bad name. Of course it's main purpose is to "do GUI s
 # The Event class
 
 
-The event class holds information about the event that's currently processed in OnGUI. It's only static member [current][14]. This holds an instance of the Event class and is only valid in OnGUI.
+The event class holds information about the event that's currently processed in OnGUI. It's only static member [current][14]. This holds an instance of the Event class and is only valid in the `OnGUI/OnInspectorGUI` callbacks.
 
 The [type property][15] holds the current [EventType][16] that is processed.
 
