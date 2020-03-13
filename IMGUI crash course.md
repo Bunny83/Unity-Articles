@@ -19,11 +19,9 @@ OnGUI is, in my opinion, a bad name. Of course it's main purpose is to "do GUI s
 # The Event class
 
 
-The event class holds information about the event that's currently processed in OnGUI. It's only static member [current][14]. This holds an instance of the Event class and is only valid in OnGUI.
+The static [Event.current][14] holds the current [EventType][16] that describes why `OnGUI/OnInspectorGUI` callbacks are being called. 
 
-The [type property][15] holds the current [EventType][16] that is processed.
-
-Here's a quick overview of the different events:
+Here's a quick overview of the different event types:
 
  - **Mouse events** like MouseDown, MouseUp, MouseMove(**editor only**), MouseDrag, ScrollWheel. I should add that Unity will emulate those events on mobile touch devices. It calculates the mouseposition by taking the arithmetic mean of all touches.
  - **Keyboard events** like KeyDown and KeyUp. Note: unlike Input.GetKeyDown / Up those events map the system's OS keyboard events. So when you hold down a key, the keydown event is repeated by the systems repeat rate. This is of course important for text editor GUIs.
