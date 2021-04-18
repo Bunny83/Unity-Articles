@@ -1,24 +1,3 @@
----
-title: （译）快速入门Unity编辑器拓展（IMGUI）
-date: 2021-4-18
-updated: 2021-4-18
-tags: [Unity技术, 编辑器拓展, 工具开发]
-categories:
-  - - 游戏引擎
-    - Unity
-  - 工具流
-top_img:
-cover: https://myfirstblog.oss-cn-hangzhou.aliyuncs.com/typoraImages_2/20210418211925.png!webp
-aplayer:
----
-<meta name="referrer" content="no-referrer" />
-
-# 前言
-
-我的技能编辑器马上就要和大家见面了，正好最近几天编辑器拓展接触的比较多一点，就想着趁热打铁优化一下架构并且重置一波UI，因为本来的样子雀食丑的一，期间遇到了许多问题，在搜索Control IDs相关内容的找到了Bunny大神的这篇文章，他将编辑器拓展里一些十分晦涩的概念以及一些事件的运行流程都清晰的解读了，故翻译出来分享给大家。
-
-本文翻译自：[https://github.com/Bunny83/Unity-Articles/blob/master/IMGUI%20crash%20course.md](https://github.com/Bunny83/Unity-Articles/blob/master/IMGUI crash course.md)
-
 Unity的IMGUI系统非常简单，但功能非常强大。主要部分有：
 
 - [OnGUI callback](http://docs.unity3d.com/Documentation/ScriptReference/MonoBehaviour.OnGUI.html)。此回调用于处理与GUI有关的所有事情。
