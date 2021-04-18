@@ -20,7 +20,7 @@ Event Class保存有关OnGUI中当前正在处理的事件的信息。即其静�
 
 以下是不同事件的概述：
 
-- **Mouse events **例如MouseDown，MouseUp，MouseMove（**仅限Editor**），MouseDrag，ScrollWheel。我应该补充一点，Unity将在移动触摸设备上模拟这些事件。它通过获取所有触摸的算术平均值来计算鼠标位置。
+- **Mouse events** 例如MouseDown，MouseUp，MouseMove（**仅限Editor**），MouseDrag，ScrollWheel。我应该补充一点，Unity将在移动触摸设备上模拟这些事件。它通过获取所有触摸的算术平均值来计算鼠标位置。
 - **Keyboard events** 例如KeyDown和KeyUp。注意：与Input.GetKeyDown/Up不同，这些事件映射操作系统的键盘事件。因此，当您按住某个键时，系统将一直触发按键事件。对于文本编辑类的GUI，这很重要。
 - **Layout event** 这是一个特殊事件，始终在所有其他事件之前执行，并用于确定自动布局控件的大小和位置。注意：可以使用[useGUILayout](http://docs.unity3d.com/Documentation/ScriptReference/MonoBehaviour-useGUILayout.html)禁用此事件，但请记住，在这种情况下，所有GUILayout内容均无法使用。
 - **Repaint event** 该事件实际上将绘制GUI元素。
